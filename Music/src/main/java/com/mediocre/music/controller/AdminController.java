@@ -17,6 +17,6 @@ public class AdminController {
     @PostMapping("/admin/login/status")
     public List<Admin> selectAll(@RequestBody Admin admin) {
         System.out.println(admin.toString());
-        return adminService.selectAll();
+        return adminService.list();
     }
 }
